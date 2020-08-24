@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caza Secretos</title>
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script src="/js/words.js"></script>
+    <style>
+      .dropbtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="word">
+      <span>C</span>
+      <span>A</span>
+      <span>Z</span>
+      <span>A</span>
+    </div>
+    <div class="word-one" onclick="window.location.href='quiz.html'">
+      <span>S</span>
+      <span>E</span>
+      <span>C</span>
+      <span>R</span>
+      <span class="clue">E</span>
+      <span>T</span>
+      <span>O</span>
+      <span>S</span>
+    </div>
+
+    <img
+      style="margin-top: 2.5em; margin-bottom: 2.5em;"
+      src="images/inspector_walking.gif"
+      onclick="alert('Aveces los secretos te llevan al éxito!')"
+      alt="Inspector"
+      width="250px"
+      height="300px"
+    />
+    <br />
+    <script>
+      function isNumber(evt) {
+        evt = evt ? evt : window.event;
+        var charCode = evt.which ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+          return false;
+        }
+        return true;
+      }
+    </script>
+
+    <button
+      type="button"
+      class="button"
+      onclick="alert('No es tan fácil! 😁')"
+      value="ENTRAR"
+      style="font-family: 'Anton', sans-serif;"
+    >
+      <span>ENTRAR</span>
+    </button>
+  </body>
+</html>

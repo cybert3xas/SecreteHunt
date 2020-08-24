@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
+body {
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+img:hover {
+  width: 350px;
+  height: 400px;
+}
+.button {
+  font-size: xx-large;
+  background-color: #e84855;
+  width: 200px;
+  height: 80px;
+  border: solid black 3px;
+  border-radius: 40px;
+}
+
+.button:hover {
+  font-size: xx-large;
+  content: "Hola!";
+  background-color: white;
+  width: 200px;
+  height: 80px;
+  border: solid black 3px;
+  border-radius: 40px;
+}
+
+.word {
+  font-family: "Anton", sans-serif;
+  perspective: 1000px;
+  margin-bottom: 0em;
+  margin-top: 8em;
+}
+.word-one span:hover {
+  font-family: "Anton", sans-serif;
+  color: white;
+}
+
+.word span {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 100px;
+  user-select: none;
+  line-height: 0.8;
+}
+.word span:hover {
+  font-family: "Anton", sans-serif;
+  color: red;
+}
+.word-one {
+  font-family: "Anton", sans-serif;
+  perspective: 1000px;
+  margin-bottom: 0em;
+  margin-top: 2em;
+}
+
+.word-one span {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 100px;
+  user-select: none;
+  line-height: 0.8;
+}
