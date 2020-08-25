@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-content: center;
 }
-img:hover {
+.img-resize:hover {
   width: 350px;
   height: 400px;
 }
@@ -26,6 +26,17 @@ img:hover {
   height: 80px;
   border: solid black 3px;
   border-radius: 40px;
+}
+
+#white-word {
+  font-family: "Anton", sans-serif;
+  perspective: 1000px;
+  margin-bottom: 0em;
+  margin-top: 8em;
+}
+
+#white-word:hover {
+  color: white;
 }
 
 .word {
