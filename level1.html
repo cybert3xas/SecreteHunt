@@ -5,209 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caza Secretos</title>
     <link rel="icon" href="images/icon.png" />
-    <script src="/js/words.js"></script>
+    <script src="js/words.js"></script>
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/index.css" />
+
     <style>
-      #white-word span:hover {
-        color: white;
+      html {
+        background-image: linear-gradient(
+          to right,
+          #8a0303,
+          #070d02,
+          #8a0303,
+          #070d02,
+          #8a0303
+        );
+
+        background-size: cover;
       }
     </style>
   </head>
-  <body id="body" style="background-color: white; text-align: center">
+  <body id="level-1-body">
     <script>
       let str = "oscuridad";
-      alert(
-        `A veces hace falta ${str} para ver mejor las cosas. \n\t - "El tribunal de las almas" (2012)`
-      );
-    </script>
-    <script>
-      function changeColor() {
-        document.getElementById("body").style.backgroundColor = "black";
-        document.getElementById("darkButton").style.display = "none"; //let the button dissapear
-        document.getElementById("lightbulp").style.display = "none"; //let the button dissapear
-        document.getElementById("white-word").style.display = "inline";
-        document.getElementById("trash-words").style.display = "inline";
-        document.getElementById("snake-dark-gif").style.display = "block";
-      }
-    </script>
-    <script>
-      function imageAnimation() {
-        document.getElementById("snake-dark-gif").style.display = "none";
-        alert(
-          "El final también es el principio! Solo busca la entrada.\n\nUn ratón te puede ayudar en la oscuridad 🙂"
-        );
-      }
+      alert(`Los detalles crean éxito. \n\t - John Wooden`);
     </script>
 
-    <div
-      id="trash-words"
-      style="
-        font-family: 'Anton', sans-serif;
-        font-size: xx-large;
-        display: none;
-        color: white;
-      "
-    >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto autem ullam
-      adipisci cumque harum inventore natus quam quis error. Accusantium sint
-      tempore ratione voluptatem ipsum totam molestiae adipisci, nulla beatae
-      magnam laboriosam quisquam, dolor officia id perferendis cupiditate culpa
-      et maiores magni praesentium voluptatum. Obcaecati praesentium provident
-      ullam maxime incidunt voluptates optio repellat similique aliquam numquam
-      nemo modi voluptatibus temporibus ut animi voluptate accusamus illum cum
-      reprehenderit a id eaque velit, voluptatum recusandae? Iusto eius
-      necessitatibus fuga nihil nemo! Aut, pariatur blanditiis minima corrupti
-      itaque ex iusto, cum quae aliquam eos quaerat illum quidem nihil maxime!
-      Tempora consequuntur ullam sapiente consectetur facilis enim optio vero
-      nemo, explicabo, error minima ea quod ratione expedita, nesciunt porro est
-      laborum! Necessitatibus vero iure nemo animi eum eos corrupti corporis
-      consequatur libero, natus, laudantium excepturi, quas inventore error
-      voluptatum ea illo? Nam, nobis doloremque. Ducimus totam necessitatibus
-      ipsa quasi optio impedit quaerat assumenda? Quaerat similique natus fugit
-      rerum vero illo eos commodi accusantium laudantium illum, blanditiis
-      molestias est debitis quisquam velit repudiandae aliquid voluptatem
-      voluptate exercitationem. Consectetur, temporibus! Et quis vel
-      exercitationem eaque quo ut, quisquam inventore! Porro veniam doloribus,
-      ipsam labore beatae voluptates odit fugit modi. Sapiente illo, incidunt
-      commodi quia voluptatibus porro. Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Iusto autem ullam adipisci cumque harum inventore natus
-      quam quis error. Accusantium sint tempore ratione voluptatem ipsum totam
-      molestiae adipisci, nulla beatae magnam laboriosam quisquam, dolor officia
-      id perferendis cupiditate culpa et maiores magni praesentium voluptatum.
-      Obcaecati praesentium provident ullam maxime incidunt voluptates optio
-      repellat similique aliquam numquam nemo modi voluptatibus temporibus ut
-      animi voluptate accusamus illum cum reprehenderit a id eaque velit,
-      voluptatum recusandae? Iusto eius necessitatibus fuga nihil nemo! Aut,
-      pariatur blanditiis minima corrupti itaque ex iusto, cum quae aliquam eos
-      quaerat illum quidem nihil maxime! Tempora consequuntur ullam sapiente
-      consectetur facilis enim optio vero nemo, explicabo, error minima ea quod
-      ratione expedita, nesciunt porro est laborum! Necessitatibus vero iure
-      nemo animi eum eos corrupti corporis consequatur libero, natus, laudantium
-      excepturi, quas inventore error voluptatum ea illo? Nam, nobis doloremque.
-      Ducimus totam necessitatibus ipsa quasi optio impedit quaerat assumenda?
-      Quaerat similique natus fugit rerum vero illo eos commodi accusantium
-      laudantium illum, blanditiis molestias est debitis quisquam velit
-      repudiandae aliquid voluptatem voluptate exercitationem. Consectetur,
-      temporibus! Et quis vel exercitationem eaque quo ut, quisquam inventore!
-      Porro veniam doloribus, ipsam labore beatae voluptates odit fugit modi.
-      Sapiente illo, incidunt commodi quia voluptatibus porro. Lorem ipsum dolor
-      sit amet consectetur adipisicing elit. Iusto autem ullam adipisci cumque
-      harum inventore natus quam quis error. Accusantium sint tempore ratione
-      voluptatem ipsum totam molestiae adipisci, nulla beatae magnam laboriosam
-      quisquam, dolor officia id perferendis cupiditate culpa et maiores magni
-      praesentium voluptatum. Obcaecati praesentium provident ullam maxime
-      incidunt voluptates optio repellat similique aliquam numquam nemo modi
-      voluptatibus temporibus ut animi voluptate accusamus illum cum
-      reprehenderit a id eaque velit, voluptatum recusandae? Iusto eius
-      necessitatibus fuga nihil nemo! Aut, pariatur blanditiis minima corrupti
-      itaque ex iusto, cum quae aliquam eos quaerat illum quidem nihil maxime!
-      Tempora consequuntur ullam sapiente consectetur facilis enim optio vero
-      nemo, explicabo, error minima ea quod ratione expedita, nesciunt porro est
-      laborum! Necessitatibus vero iure nemo animi eum eos corrupti corporis
-      consequatur libero, natus, laudantium excepturi, quas inventore error
-      voluptatum ea illo? Nam, nobis doloremque. Ducimus totam necessitatibus
-      ipsa quasi optio impedit quaerat assumenda? Quaerat similique natus fugit
-      rerum vero illo eos commodi accusantium laudantium illum, blanditiis
-      molestias est debitis quisquam velit repudiandae aliquid voluptatem
-      voluptate exercitationem. Consectetur, temporibus! Et quis vel
-      exercitationem eaque quo ut, quisquam inventore! Porro veniam doloribus,
-      ipsam labore beatae voluptates odit fugit modi. Sapiente illo, incidunt
-      commodi quia voluptatibus porro.
-    </div>
-    <div
-      id="white-word"
-      style="display: none; color: black"
-      onclick="window.location.href='level2.html'"
-    >
-      <span>E</span>
-      <span>N</span>
-      <span>T</span>
-      <span>R</span>
-      <span>A</span>
-    </div>
     <img
       class="img-resize"
-      style="display: none; margin-left: auto; margin-right: auto"
-      id="snake-dark-gif"
-      src="images/snake-gif.gif"
-      alt="snake-gif"
-      onclick="imageAnimation();"
-      width="650px"
+      src="images/clown.gif"
+      width="350px"
       height="400px"
+      onclick='document.getElementById("entrar-boton").style.display = "inline";
+    '
+      id="clown"
+      style="position: relative; top: 50%; left: 40%; margin-top: 180px"
     />
-    <div id="light-section">
-      <img
-        id="lightbulp"
-        src="images/lightbulp.gif"
-        alt="lightbulp"
-        width="650px"
-        height="500px"
-        style="
-          align-self: left;
-          text-align: left;
-          display: block;
-          position: absolute;
-        "
-      />
-    </div>
-
-    <div id="light-section" style="position: absolute">
-      <button
-        class="button"
-        id="darkButton"
-        onclick="changeColor();"
-        style="position: absolute"
-      >
-        DARK!
-      </button>
-    </div>
+    <audio controls style="display: none" id="music">
+      <source src="music/stareMusic.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio controls style="display: none" id="music_lala">
+      <source src="music/lala.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
     <script>
-      dragElement(document.getElementById("light-section"));
-      function dragElement(elmnt) {
-        var pos1 = 0,
-          pos2 = 0,
-          pos3 = 0,
-          pos4 = 0;
-        if (document.getElementById(elmnt.id + "header")) {
-          // if present, the header is where you move the DIV from:
-          document.getElementById(
-            elmnt.id + "header"
-          ).onmousedown = dragMouseDown;
+      var aud = document.getElementById("music");
+      aud.onended = function () {
+        let message = prompt(
+          `"Beware the stare of Mary Shaw. She had no children only ____"`
+        );
+        if (message === "dolls") {
+          alert("Correcto!\n\nPrimer pista➡️'Cumpleaños'");
+          document.getElementById("noche-boton").style.display = "inline";
         } else {
-          // otherwise, move the DIV from anywhere inside the DIV:
-          elmnt.onmousedown = dragMouseDown;
-        }
+          window.confirm("Incorrecto!");
 
-        function dragMouseDown(e) {
-          e = e || window.event;
-          e.preventDefault();
-          // get the mouse cursor position at startup:
-          pos3 = e.clientX;
-          pos4 = e.clientY;
-          document.onmouseup = closeDragElement;
-          // call a function whenever the cursor moves:
-          document.onmousemove = elementDrag;
+          return false;
         }
-
-        function elementDrag(e) {
-          e = e || window.event;
-          e.preventDefault();
-          // calculate the new cursor position:
-          pos1 = pos3 - e.clientX;
-          pos2 = pos4 - e.clientY;
-          pos3 = e.clientX;
-          pos4 = e.clientY;
-          // set the element's new position:
-          elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-          elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
-        }
-
-        function closeDragElement() {
-          // stop moving when mouse button is released:
-          document.onmouseup = null;
-          document.onmousemove = null;
-        }
-      }
+      };
     </script>
+    <script>
+      var aud2 = document.getElementById("music_lala");
+      aud2.onended = function () {
+        document.getElementById("entrar-boton").style.display = "none"; //let the clown  disappear
+        document.getElementById("noche-boton").style.display = "none"; //let the button disappear
+        document.getElementById("clown").style.display = "none"; //let the button disappear
+      };
+    </script>
+    <button
+      type="button"
+      class="button"
+      onclick='document.getElementById("music").play();'
+      id="entrar-boton"
+      value="ENTRAR"
+      style="
+        display: none;
+        font-family: 'Anton', sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 44.5%;
+        margin-top: 200px;
+      "
+    >
+      <span>PLAY</span>
+    </button>
+    <button
+      type="button"
+      class="button"
+      onclick="balckLala();"
+      id="noche-boton"
+      value="NOCHE"
+      style="
+        display: none;
+        font-family: 'Anton', sans-serif;
+        position: absolute;
+        top: 40%;
+        left: 44.5%;
+        margin-left: 600px;
+      "
+    >
+      <span>NOCHE</span>
+    </button>
   </body>
 </html>

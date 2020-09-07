@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!-- These pages will be used by somebody that does not know anything of code and that is why I have decided 
+to have all the logic in the same file.-->
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -7,51 +8,23 @@
     <link rel="icon" href="images/icon.png" />
     <link rel="stylesheet" href="css/index.css" />
 
-    <script src="/js/words.js"></script>
+    <script src="js/words.js"></script>
+    <script src="js/index.js"></script>
     <style>
-      .dropbtn {
-        background-color: #4caf50;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-      }
-
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      }
-
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .dropdown:hover .dropbtn {
-        background-color: #3e8e41;
+      .index-body {
+        background-color: white;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
       }
     </style>
   </head>
-  <body>
+
+  <body class="index-body">
+    <script>
+      var person = prompt("Introduce tu nombre:", "");
+      alert(`Bienvenida ${person} 😏😏`);
+    </script>
     <div class="word">
       <span>C</span>
       <span>A</span>
@@ -70,33 +43,24 @@
     </div>
 
     <img
+      class="img-resize"
       style="margin-top: 2.5em; margin-bottom: 2.5em"
       src="images/inspector_walking.gif"
-      onclick="alert('Aveces los secretos te llevan al éxito!')"
+      onclick="alert(`Aveces los secretos te llevan al éxito ${person}!`)"
       alt="Inspector"
       width="250px"
       height="300px"
     />
     <br />
-    <script>
-      function isNumber(evt) {
-        evt = evt ? evt : window.event;
-        var charCode = evt.which ? evt.which : evt.keyCode;
-        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-          return false;
-        }
-        return true;
-      }
-    </script>
-
     <button
       type="button"
       class="button"
-      onclick="alert('No es tan fácil! 😁')"
+      onclick="alert(`No es tan fácil ${person}! 😁`)"
       value="ENTRAR"
       style="font-family: 'Anton', sans-serif"
     >
       <span>ENTRAR</span>
     </button>
+    <p></p>
   </body>
 </html>

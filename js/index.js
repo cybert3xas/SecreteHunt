@@ -1,106 +1,22 @@
-(function () {
-  function buildQuiz() {
-    // variable to store the HTML output
-    const output = [];
+/*Level 1 JS Begins*/
+function showButton() {
+  document.getElementById("entrar-boton").style.display = "inline"; //let the button dissapear
+}
 
-    // for each question...
-    myQuestions.forEach((currentQuestion, questionNumber) => {
-      // variable to store the list of possible answers
-      const answers = [];
+function balckLala() {
+  document.getElementById("level-1-body").style.backgroundColor = "black";
+  document.getElementById("music_lala").play();
+}
 
-      // and for each available answer...
-      for (letter in currentQuestion.answers) {
-        // ...add an HTML radio button
-        answers.push(
-          `<label>
-                <input type="radio" name="question${questionNumber}" value="${letter}">
-                ${letter} :
-                ${currentQuestion.answers[letter]}
-              </label>`
-        );
-      }
+function imageAnimation() {
+  document.getElementById("snake-dark-gif").style.display = "none";
+  alert(
+    "El final también es el principio! Solo busca la entrada.\n\nUn ratón te puede ayudar en la oscuridad 🙂"
+  );
+}
 
-      // add this question and its answers to the output
-      output.push(
-        `<div class="question"> ${currentQuestion.question} </div>
-            <div class="answers"> ${answers.join("")} </div>`
-      );
-    });
+/*Level 1 JS Ends*/
 
-    // finally combine our output list into one string of HTML and put it on the page
-    quizContainer.innerHTML = output.join("");
-  }
+/*Level 2 JS Begins*/
 
-  function showResults() {
-    // gather answer containers from our quiz
-    const answerContainers = quizContainer.querySelectorAll(".answers");
-
-    // keep track of user's answers
-    let numCorrect = 0;
-
-    // for each question...
-    myQuestions.forEach((currentQuestion, questionNumber) => {
-      // find selected answer
-      const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
-      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-      // if answer is correct
-      if (userAnswer === currentQuestion.correctAnswer) {
-        // add to the number of correct answers
-        numCorrect++;
-
-        // color the answers green
-        answerContainers[questionNumber].style.color = "green";
-      }
-      // if answer is wrong or blank
-      else {
-        // color the answers red
-        answerContainers[questionNumber].style.color = "white";
-      }
-    });
-
-    // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-  }
-
-  const quizContainer = document.getElementById("quiz");
-  const resultsContainer = document.getElementById("results");
-  const submitButton = document.getElementById("submit");
-  const myQuestions = [
-    {
-      question: "Who invented JavaScript?",
-      answers: {
-        a: "Douglas Crockford",
-        b: "Sheryl Sandberg",
-        c: "Brendan Eich",
-      },
-      correctAnswer: "c",
-    },
-    {
-      question: "Which one of these is a JavaScript package manager?",
-      answers: {
-        a: "Node.js",
-        b: "TypeScript",
-        c: "npm",
-      },
-      correctAnswer: "c",
-    },
-    {
-      question: "Which tool can you use to ensure code quality?",
-      answers: {
-        a: "Angular",
-        b: "jQuery",
-        c: "RequireJS",
-        d: "ESLint",
-      },
-      correctAnswer: "d",
-    },
-  ];
-
-  // Kick things off
-  buildQuiz();
-
-  // Event listeners
-  submitButton.addEventListener("click", showResults);
-})();
+/*Level 2 JS Ends*/

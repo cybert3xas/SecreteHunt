@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
-body {
-  background-color: white;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-}
 .img-resize:hover {
   width: 350px;
   height: 400px;
+}
+#mydiv {
+  position: fixed;
+}
+#mydiv:hover {
+  position: absolute;
 }
 .button {
   font-size: xx-large;
