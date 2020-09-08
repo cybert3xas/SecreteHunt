@@ -5,6 +5,7 @@ function showButton() {
 
 function balckLala() {
   document.getElementById("level-1-body").style.backgroundColor = "black";
+  document.getElementById("level-1-body").style.backgroundImage = "none";
   document.getElementById("music_lala").play();
 }
 
@@ -18,5 +19,22 @@ function imageAnimation() {
 /*Level 1 JS Ends*/
 
 /*Level 2 JS Begins*/
-
+function mouseDownBlue() {
+  document.getElementById("one").style.backgroundColor = "red";
+}
+function mouseDownRed() {
+  document.getElementById("two").style.backgroundColor = "orange";
+}
+function mouseDownGreen() {
+  document.getElementById("three").style.backgroundColor = "blue";
+}
+function mouseDownPink() {
+  document.getElementById("four").style.color = "red";
+}
+function mouseDownBlack() {
+  document.getElementById("five").style.color = "red";
+}
+function mouseDownOrange() {
+  document.getElementById("six").style.color = "red";
+}
 /*Level 2 JS Ends*/

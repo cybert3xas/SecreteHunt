@@ -5,112 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caza Secretos</title>
     <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="css/level2.css" />
+    <script src="js/index.js"></script>
+    <style>
+      body {
+        min-height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
+          url("images/niño.gif");
+      }
+      .five:active {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url("images/niño.gif");
+      }
+    </style>
   </head>
   <body>
-    <!-- Draggable DIV -->
-    <div id="mydiv">
-      <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-
+    <div class="wrapper">
       <div
-      id="trash-words"
-      style="
-        font-family: 'Anton', sans-serif;
-        font-size: xx-large;
-        display: none;
-        color: white;
-      "
-    >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto autem ullam
-      adipisci cumque harum inventore natus quam quis error. Accusantium sint
-      tempore ratione voluptatem ipsum totam molestiae adipisci, nulla beatae
-      magnam laboriosam quisquam, dolor officia id perferendis cupiditate culpa
-      et maiores magni praesentium voluptatum. Obcaecati praesentium provident
-      ullam maxime incidunt voluptates optio repellat similique aliquam numquam
-      nemo modi voluptatibus temporibus ut animi voluptate accusamus illum cum
-      reprehenderit a id eaque velit, voluptatum recusandae? Iusto eius
-      necessitatibus fuga nihil nemo! Aut, pariatur blanditiis minima corrupti
-      itaque ex iusto, cum quae aliquam eos quaerat illum quidem nihil maxime!
-      Tempora consequuntur ullam sapiente consectetur facilis enim optio vero
-      nemo, explicabo, error minima ea quod ratione expedita, nesciunt porro est
-      laborum! Necessitatibus vero iure nemo animi eum eos corrupti corporis
-      consequatur libero, natus, laudantium excepturi, quas inventore error
-      voluptatum ea illo? Nam, nobis doloremque. Ducimus totam necessitatibus
-      ipsa quasi optio impedit quaerat assumenda? Quaerat similique natus fugit
-      rerum vero illo eos commodi accusantium laudantium illum, blanditiis
-      molestias est debitis quisquam velit repudiandae aliquid voluptatem
-      voluptate exercitationem. Consectetur, temporibus! Et quis vel
-      exercitationem eaque quo ut, quisquam inventore! Porro veniam doloribus,
-      ipsam labore beatae voluptates odit fugit modi. Sapiente illo, incidunt
-      commodi quia voluptatibus porro. Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Iusto autem ullam adipisci cumque harum inventore natus
-      quam quis error. Accusantium sint tempore ratione voluptatem ipsum totam
-      molestiae adipisci, nulla beatae magnam laboriosam quisquam, dolor officia
-      id perferendis cupiditate culpa et maiores magni praesentium voluptatum.
-      Obcaecati praesentium provident ullam maxime incidunt voluptates optio
-      repellat similique aliquam numquam nemo modi voluptatibus temporibus ut
-      animi voluptate accusamus illum cum reprehenderit a id eaque velit,
-      voluptatum recusandae? Iusto eius necessitatibus fuga nihil nemo! Aut,
-      pariatur blanditiis minima corrupti itaque ex iusto, cum quae aliquam eos
-      quaerat illum quidem nihil maxime! Tempora consequuntur ullam sapiente
-      consectetur facilis enim optio vero nemo, explicabo, error minima ea quod
-      ratione expedita, nesciunt porro est laborum! Necessitatibus vero iure
-      nemo animi eum eos corrupti corporis consequatur libero, natus, laudantium
-      excepturi, quas inventore error voluptatum ea illo? Nam, nobis doloremque.
-      Ducimus totam necessitatibus ipsa quasi optio impedit quaerat assumenda?
-      Quaerat similique natus fugit rerum vero illo eos commodi accusantium
-      laudantium illum, blanditiis molestias est debitis quisquam velit
-      repudiandae aliquid voluptatem voluptate exercitationem. Consectetur,
-      temporibus! Et quis vel exercitationem eaque quo ut, quisquam inventore!
-      Porro veniam doloribus, ipsam labore beatae voluptates odit fugit modi.
-      Sapiente illo, incidunt commodi quia voluptatibus porro. Lorem ipsum dolor
-      sit amet consectetur adipisicing elit. Iusto autem ullam adipisci cumque
-      harum inventore natus quam quis error. Accusantium sint tempore ratione
-      voluptatem ipsum totam molestiae adipisci, nulla beatae magnam laboriosam
-      quisquam, dolor officia id perferendis cupiditate culpa et maiores magni
-      praesentium voluptatum. Obcaecati praesentium provident ullam maxime
-      incidunt voluptates optio repellat similique aliquam numquam nemo modi
-      voluptatibus temporibus ut animi voluptate accusamus illum cum
-      reprehenderit a id eaque velit, voluptatum recusandae? Iusto eius
-      necessitatibus fuga nihil nemo! Aut, pariatur blanditiis minima corrupti
-      itaque ex iusto, cum quae aliquam eos quaerat illum quidem nihil maxime!
-      Tempora consequuntur ullam sapiente consectetur facilis enim optio vero
-      nemo, explicabo, error minima ea quod ratione expedita, nesciunt porro est
-      laborum! Necessitatibus vero iure nemo animi eum eos corrupti corporis
-      consequatur libero, natus, laudantium excepturi, quas inventore error
-      voluptatum ea illo? Nam, nobis doloremque. Ducimus totam necessitatibus
-      ipsa quasi optio impedit quaerat assumenda? Quaerat similique natus fugit
-      rerum vero illo eos commodi accusantium laudantium illum, blanditiis
-      molestias est debitis quisquam velit repudiandae aliquid voluptatem
-      voluptate exercitationem. Consectetur, temporibus! Et quis vel
-      exercitationem eaque quo ut, quisquam inventore! Porro veniam doloribus,
-      ipsam labore beatae voluptates odit fugit modi. Sapiente illo, incidunt
-      commodi quia voluptatibus porro.
+        id="one"
+        class="one"
+        style="background-color: blue"
+        onmousedown="mouseDownBlue()"
+        onmouseup="document.getElementById('one').style.backgroundColor = 'blue';"
+      ></div>
+      <div
+        id="two"
+        class="two"
+        style="background-color: red"
+        onmousedown="mouseDownRed()"
+        onmouseup="document.getElementById('two').style.backgroundColor = 'red';"
+      ></div>
+      <div
+        id="three"
+        class="three"
+        style="background-color: green"
+        onmousedown="mouseDownGreen()"
+        onmouseup="document.getElementById('three').style.backgroundColor = 'green';"
+      ></div>
+      <div
+        id="four"
+        class="four"
+        style="background-color: pink"
+        onmousedown="mouseDownPink()"
+      ></div>
+      <div
+        id="five"
+        class="five"
+        style="background-color: black"
+        onmousedown="mouseDownBlack()"
+      ></div>
+      <div
+        id="six"
+        class="six"
+        style="background-color: orange"
+        onmousedown="mouseDownOrange()"
+      ></div>
     </div>
-    <div
-      id="white-word"
-      style="display: none; color: black"
-      onclick="window.location.href='level2.html'"
-    >
-      <span>E</span>
-      <span>N</span>
-      <span>T</span>
-      <span>R</span>
-      <span>A</span>
-    </div>
-    <img
-      class="img-resize"
-      style="
-        display: none;
-        margin-left: auto;
-        margin-right: auto;
-        margin-left: 10px;
-      "
-      id="snake-dark-gif"
-      src="images/hospital.jpg"
-      alt="snake-gif"
-      onclick="imageAnimation();"
-      width="650px"
-      height="400px"
-    />
   </body>
 </html>

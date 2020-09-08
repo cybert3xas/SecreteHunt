@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/index.css" />
 
     <style>
-      html {
+      body {
+        min-height: 100%;
         background-image: linear-gradient(
           to right,
           #8a0303,
@@ -19,7 +20,6 @@
           #070d02,
           #8a0303
         );
-
         background-size: cover;
       }
     </style>
@@ -50,12 +50,13 @@
     </audio>
     <script>
       var aud = document.getElementById("music");
+
       aud.onended = function () {
         let message = prompt(
           `"Beware the stare of Mary Shaw. She had no children only ____"`
         );
         if (message === "dolls") {
-          alert("Correcto!\n\nPrimer pista➡️'Cumpleaños'");
+          alert("Correcto!\n\nPrimer pista➡️'CAMBIOS'");
           document.getElementById("noche-boton").style.display = "inline";
         } else {
           window.confirm("Incorrecto!");
@@ -70,6 +71,7 @@
         document.getElementById("entrar-boton").style.display = "none"; //let the clown  disappear
         document.getElementById("noche-boton").style.display = "none"; //let the button disappear
         document.getElementById("clown").style.display = "none"; //let the button disappear
+        window.location.href = "level2.html";
       };
     </script>
     <button
